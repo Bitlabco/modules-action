@@ -21,6 +21,7 @@ runs:
       with:
         app-id: 1592499
         private-key: ${{ inputs.private-key }}
+        owner: Bitlabco
 
     - name: Configure Git Authentication
       shell: bash
