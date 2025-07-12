@@ -6,7 +6,7 @@ This GitHub Action generates a GitHub App token and configures Git authenticatio
 
 ```yaml
 - name: Setup Bitlab Authentication
-  uses: bitlabco/modules-action@v1
+  uses: bitlabco/modules-action@v1.1
   id: bitlab-auth
   with:
     private-key: ${{ secrets.BITLAB_GITHUB_APP_PRIVATE_KEY }}
@@ -52,7 +52,7 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Setup Bitlab Authentication
-        uses: bitlabco/modules-action@v1
+        uses: bitlabco/modules-action@v1.1
         id: auth
         with:
           private-key: ${{ secrets.BITLAB_GITHUB_APP_PRIVATE_KEY }}
