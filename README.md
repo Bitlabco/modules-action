@@ -52,7 +52,7 @@ jobs:
       - uses: actions/checkout@v4
       
       - name: Setup Bitlab Authentication
-        uses: bitlabco/modules-action@v1.1
+        uses: bitlabco/modules-action@v2
         id: auth
         with:
           private-key: ${{ secrets.BITLAB_GITHUB_APP_PRIVATE_KEY }}
